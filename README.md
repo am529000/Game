@@ -14,7 +14,7 @@ strength to weaker element = 1.5x damage
 Enviroment:
 Diffrent Terrain: Forrest; Earth, Desert; Fire, River; Water, Mountains; Wind
 Valcano; Earth & Fire, Beach; Water & Wind,  
-Your animals terrain = 0.75 damage taken instead of 1.0
+Your animals terrain = 0.9 damage taken instead of 1.0; 10% resistence
 
 
 
