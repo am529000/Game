@@ -5,10 +5,14 @@ Character Development:
 4 Types of animals: Fire Water, Earth, Wind
 Each type has a strength and weakness, Water > Fire, Fire > Earth, Earth > Wind, Wind > Water.
 strength to weaker element = 1.5x damage
+Types: Dog, Cat, Rabbit, bird, snake, lizard, fish, etc
 
-
-
-
+Fighting:
+1v1 with teams of 3
+Have a select amount of attacks for each dffrent type; ex. Dog, has Bite, Scratch, Dash, Pounce.
+Each attack does a different amount of damage with possible deff buffs or buffs. 
+can only use attacks a certain amount of times
+possible characters could have passive abilities or attacks that just debuff or buff them or the enemy or teammates.
 
 
 Enviroment:
