@@ -24,7 +24,17 @@ Health System:
 damage does 1 - 25
 
 
+UI
+Start Screen: Buttons; Start Battle, Animal Choice/Customization, Settings, Exit
+Time, Level, Logo
 
+Each time you win you
+
+Our Animals presets:
+Wind: Striker (Bird), Monika (Moskito)
+Fire: Tony (Tiger), Wukong (Monkey)
+Water: Fishstik (Fish), Mr.Crabs (Crab)
+Earth: Scorp (Scorpion), Sandy (Squirrel)
 
 
 
