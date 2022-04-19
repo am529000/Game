@@ -1,9 +1,9 @@
 import java.awt.*;    
-public class ButtonExample {    
+public class Buttons {    
 public static void main (String[] args) {   
   
     // frame = f
-    Frame f = new Frame("Button Example");    
+    Frame f = new Frame("Button");    
   
     // Button Label
     Button a = new Button("Battle");
@@ -29,3 +29,5 @@ public static void main (String[] args) {
     f.setVisible(true);     
 }    
 } 
+
+// background
