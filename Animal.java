@@ -1,4 +1,4 @@
-public abstract class Animal {
+public abstract class Animal implements IDamageable, IDamaging {
     private String _name;
 
     // Default constructor

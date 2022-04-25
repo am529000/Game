@@ -2,9 +2,8 @@ public interface IDamageable {
    
     int HealthPoints();
 
-    void SetHealthPoints();
-
-    void GetHealthPoints();
+    int GetHealthPoints();
+    void SetHealthPoints(int level);
 
     void SetMaxHealthPoints();
 

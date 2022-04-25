@@ -1,24 +1,9 @@
-public abstract class Terrain {
-    private String _name;
+public abstract class Terrain implements IDamageable {
+  
+    abstract public String name();
 
-    // Default constructor
-    protected Terrain() {
-        this._name = "un-named";
-    }
-
-    // A Constructor that takes a name for the animal
-    protected Terrain(String name) {
-        this._name = name;
-    }
-
-    public abstract String type();
+  // If the element matches the terrain +20 health
 
   
-    public String name() {
-        return this._name;
-    }
-
-    public String toString() {
-        return String.format("Terrain: %s.", this.type());
-    }
+  
 }

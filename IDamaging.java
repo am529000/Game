@@ -1,5 +1,5 @@
 public interface IDamaging {
   
-  void inflictDamage();
+  void inflictDamage(IDamageable target);
   
 }
