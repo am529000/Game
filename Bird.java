@@ -1,5 +1,5 @@
-public class Bird extends WindAnimal {
-    public Bird(String name) {
+class Bird extends WindAnimal {
+    Bird(String name) {
         super(name);
     }
 
@@ -11,9 +11,9 @@ public class Bird extends WindAnimal {
         return 100;
     }
   
-
-    // Stock Keeping Unit - a unique identifier for cataloging and inventory purposes
-    public String sku() {
-        return "bird0001";
-    }
+    public void inflictDamageTo(IDamagable target){
+      int targetHealth = target.getHealthLevel();
+      target.setHealthLevel(targetHealth - 20);
+  }
 }
+

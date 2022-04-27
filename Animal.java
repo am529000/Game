@@ -1,28 +1,21 @@
-public abstract class Animal implements IDamageable, IDamaging {
-    private String _name;
+abstract class Animal implements IDamageable, IDamaging {
+  abstract private String name();
+  abstract private String animalType();
 
-    // Default constructor
-    protected Animal() {
-        this._name = "un-named";
-    }
+  int health = 100;
+  public int getHealthPoints() {
+    return this.health;
+  }
+  public void setHealthPoints(int level) {
+    this.health = level;
+  }
 
-    // A Constructor that takes a name for the animal
-    protected Animal(String name) {
-        this._name = name;
-    }
+  public void inflictDamageTo(IDamagable target){
+    int targetHealth = target.getHealthPoints();
+    target.setHealth(targetHealth - 10);
+  }
 
-    public abstract String species();
 
-    public abstract String element();
 
-    public abstract int HealthPoints();
 
-    // The given (pet) name of the animal
-    public String name() {
-        return this._name;
-    }
-
-    public String toString() {
-        return String.format("Hi, I'm %s, a %s. %s. %s.", this.name(), this.species(), this.element(), this.HealthPoints());
-    }
 }

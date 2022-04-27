@@ -1,8 +1,5 @@
-public class Cave extends EarthTerrain {
+class Cave extends EarthTerrain {
   public String name() {
     return "Cave";
   }
-
-
-  
 }

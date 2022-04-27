@@ -6,7 +6,5 @@ public abstract class WindTerrain extends Terrain {
     // Stock Keeping Unit - a unique identifier for cataloging and inventory purposes
     public abstract String sku();
 
-    public String toString() {
-        return String.format("%s.", super.toString());
-    }
+
 }

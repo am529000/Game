@@ -1,4 +1,4 @@
-public abstract class Terrain implements IDamageable {
+public abstract class Terrain  {
   
     abstract public String name();
 
