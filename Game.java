@@ -3,7 +3,7 @@ class Game {
   Terrain terrain;
   
   void startGame() {
-    // TODO: Show intro/instructions
+    this
     
     // Select a creature (player 1)
     this.player1 = this.selectPlayer("Player 1");
