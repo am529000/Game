@@ -1,12 +1,19 @@
-public interface IDamageable {
+interface IDamageable {
    
-    int HealthPoints();
+  int getHealthPoints();
+  void setHealthPoints(int Points);
 
-    void SetHealthPoints();
+  int getFireLevel();
+  void setFireLevel(int Level);
 
-    void GetHealthPoints();
+  int getWaterLevel();
+  void setWaterLevel(int Level);
 
-    void SetMaxHealthPoints();
+  int getEarthLevel();
+  void setEarthLevel(int Level);
 
-    public String sku();
+  int getWindLevel();
+  void setWindLevel(int Level);
+  
+  boolean isDefeated();
 } 
