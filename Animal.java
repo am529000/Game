@@ -1,28 +1,57 @@
-public abstract class Animal {
-    private String _name;
+abstract class Animal implements IDamageable, IDamaging {
+  abstract public String getName();
+  abstract public String animalType();
 
-    // Default constructor
-    protected Animal() {
-        this._name = "un-named";
-    }
+  int health = 100;
+  public int getHealthPoints() {
+    return this.health;
+  }
+  public void setHealthPoints(int points) {
+    this.health = points;
+  }
+ 
+  int fire = 100;
+  public int getFireLevel() {
+    return this.fire;
+  }
+  public void setFireLevel(int level) {
+    this.fire = level;
+  }
 
-    // A Constructor that takes a name for the animal
-    protected Animal(String name) {
-        this._name = name;
-    }
+  int water = 100;
+  public int getWaterLevel() {
+    return this.water;
+  }
+  public void setWaterLevel(int level) {
+    this.water = level;
+  }
+  
+  int earth = 100;
+  public int getEarthLevel() {
+    return this.earth;
+  }
+  public void setEarthLevel(int level) {
+    this.earth = level;
+  }
 
-    public abstract String species();
+  int wind = 100;
+  public int getWindLevel() {
+    return this.wind;
+  }
+  public void setWindLevel(int level) {
+    this.wind = level;
+  }
 
-    public abstract String element();
+  public boolean isDefeated() {
+    return this.health < 10;
+  }
 
-    public abstract int HealthPoints();
-
-    // The given (pet) name of the animal
-    public String name() {
-        return this._name;
-    }
-
-    public String toString() {
-        return String.format("Hi, I'm %s, a %s. %s. %s.", this.name(), this.species(), this.element(), this.HealthPoints());
-    }
+  public void inflictDamageTo(IDamageable target){
+    int targetHealth = target.getHealthPoints();
+    int fireDifference = this.fire - target.getFireLevel();
+    int waterDifference = this.water - target.getWaterLevel();
+    int earthDifference = this.earth - target.getEarthLevel();
+    int windDifference = this.wind - target.getWindLevel();
+    target.setHealthPoints(targetHealth - 10 + fireDifference + waterDifference + earthDifference + windDifference);
+  }
 }

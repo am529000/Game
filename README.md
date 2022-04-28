@@ -35,8 +35,3 @@ Wind: Striker (Bird), Monika (Moskito)
 Fire: Tony (Tiger), Wukong (Monkey)
 Water: Fishstik (Fish), Mr.Crabs (Crab)
 Earth: Scorp (Scorpion), Sandy (Squirrel)
-
-
-
-
-
