@@ -1,9 +1,8 @@
-public abstract class Terrain  {
+abstract class Terrain implements IDamaging {
+  abstract public String name();
   
-    abstract public String name();
-
-  // If the element matches the terrain +20 health
-
-  
-  
+  public void inflictDamageTo(IDamageable target){
+    int targetHealth = target.getHealthPoints();
+    target.setHealthPoints(targetHealth - 1);
+  }
 }

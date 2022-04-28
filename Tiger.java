@@ -1,18 +1,17 @@
-public class Tiger extends FireAnimal {
-    public Tiger(String name) {
-        super(name);
-    }
-
-    public String species() {
-        return "Tiger";
-    }
-
-    public int HealthPoints() {
-        return 100;
-    }
-
-    // Stock Keeping Unit - a unique identifier for cataloging and inventory purposes
-    public String sku() {
-        return "tiger0001";
-    }
+class Tiger extends Animal {
+  String name;
+  Tiger(String name) {
+    this.name = name;
+  }
+  public String getName() {
+    return this.name;
+  }
+  public String animalType() {
+    return "Tony";
+  }
+  
+  public void inflictDamageTo(IDamageable target){
+    int targetHealth = target.getHealthPoints();
+    target.setHealthPoints(targetHealth - 15);
+  }
 }
