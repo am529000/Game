@@ -1,4 +1,5 @@
 abstract class Animal implements IDamageable, IDamaging {
+
   abstract public String getName();
   abstract public String animalType();
 
