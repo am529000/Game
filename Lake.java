@@ -1,10 +1,9 @@
-class Cave extends Terrain {
+class Lake extends Terrain {
   public String name() {
-    return "Cave";
+    return "Lake";
   }
   public void inflictDamageTo(IDamageable target){
     int targetHealth = target.getHealthPoints();
-    target.setHealthPoints(targetHealth - 5);
+    target.setHealthPoints(targetHealth - 15);
   }
 }
-  
